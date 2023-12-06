@@ -1,0 +1,49 @@
+<html>
+<head>
+  <link rel="stylesheet" href="home.css">
+  <script src="email.validaction.js"></script>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li>
+        
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Files</a>
+      <div class="dropdown-content">
+        <a href="#">Tools</a>
+        <a href="#">Edit</a>
+        <a><input type="file" id="ctrl" webkitdirectory directory multiple onchange="displayImages(event)" accept="image/*"></a></li></div>   
+      </div> 
+      </li>
+    </ul>
+    
+    
+    <div class="panel" id="image-panel">
+      <div id="image-container"></div>
+      <span id="total-images"></span>
+</div>
+<div class="pagination">
+  <button id="prev">Previous</button>
+  <button id="next">Next</button>
+</div>
+
+<div class="stats">
+  Image Stats:
+  <button id="showStatsButton">Show Stats</button>
+    <div id="statsContainer"></div>
+</div>
+<!-- <script src="Home.js"></script> -->
+<script src="Home.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+   
+</body>
+</html>  
